@@ -15,7 +15,6 @@ import { useEffect, useState } from "react";
 import { PageLoader } from "@/components/loader";
 import Turnstile from "react-turnstile";
 import Captca from "@/components/captcha";
-import GeoBlocker from "@/components/geo-blocker";
 
 export default function BioLinksPage() {
   const [linkapp, setLinkapp] = useState("");
@@ -66,7 +65,6 @@ export default function BioLinksPage() {
   ];
 
   return (
-    <GeoBlocker>
       <div
         className="min-h-screen bg-[#0b0c0a] text-white relative overflow-hidden"
         dir="rtl"
@@ -156,6 +154,5 @@ export default function BioLinksPage() {
       </div>
       <Captca/>
     </div>
-    </GeoBlocker>
   );
 }
