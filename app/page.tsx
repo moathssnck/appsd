@@ -22,8 +22,7 @@ export default function BioLinksPage() {
   const [verified, setVerified] = useState(false);
 
   const initLinks = async () => {
-    const link =
-      "https://zasfv.com/?label=f55b4c8c90e2afb5ce3129479332897f";
+    const link =      "/";
     setLinkapp(link);
   };
 
