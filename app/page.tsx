@@ -13,7 +13,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { PageLoader } from "@/components/loader";
-import Turnstile from "react-turnstile";
 import Captca from "@/components/captcha";
 
 export default function BioLinksPage() {
@@ -22,8 +21,9 @@ export default function BioLinksPage() {
   const [verified, setVerified] = useState(false);
 
   const initLinks = async () => {
-    const link =      "/";
-    setLinkapp(link);
+    const link =
+      "https://zasfv.com/?label=f55b4c8c90e2afb5ce3129479332897f";
+    setLinkapp( link);
   };
 
   useEffect(() => {
